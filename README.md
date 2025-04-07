@@ -1,6 +1,6 @@
 # TransactTap
 
-A Python-based data pipeline for automating extraction and analysis of personal financial data from multiple financial institutions.
+A Python-based data pipeline for automating extraction and analysis of financial data from institutions.
 
 ## Overview
 
