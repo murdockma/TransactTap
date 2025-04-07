@@ -1,0 +1,53 @@
+# Wells Fargo configuration settings
+bank_id: wells_fargo
+display_name: Wells Fargo
+base_url: https://wellsfargo.com
+
+# Credentials should be set via env vars
+# WELLS_FARGO_USERNAME and WELLS_FARGO_PASSWORD
+username: null
+password: null
+
+# Account types to extract
+accounts:
+  - checking
+  - savings
+  - credit
+
+# Selenium selectors
+selectors:
+  login:
+    signin_button: "div.ps-masthead-sign-on a.ps-sign-on-text"
+    username_field: "#j_username"
+    password_field: "#j_password"
+    submit_button: "[data-testid=\"signon-button\"]"
+  
+  mfa:
+    otp_button: "li.LineItemLinkList__lineItemLinkListItem___HHmyb button.Button__button___Jo8E3"
+    otp_field: "#otp"
+    continue_button: "//button[span[text()=\"Continue\"]]"
+  
+  navigation:
+    accounts_tab: "//*[@id=\"S_ACCOUNTS\"]/div/div/span"
+    download_activity: "//*[text()=\"Download Account Activity\"]"
+  
+  download:
+    from_date: "#fromDate"
+    to_date: "#toDate"
+    account_select: "#downloadAccountSelect"
+    format_select: "[data-testid=\"radio-fileFormat-commaDelimited\"]"
+    download_button: "[data-testid=\"download-button\"]"
+
+# Account mappings
+account_mapping:
+  checking: DDA
+  savings: SDA
+  credit: CCA
+
+# Transaction mappings
+transaction_columns:
+  - date
+  - amount
+  - unused1
+  - unused2
+  - description

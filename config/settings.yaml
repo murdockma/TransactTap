@@ -1,0 +1,29 @@
+# General application settings
+app:
+  log_level: INFO
+  default_start_days: 30 
+
+# BigQuery settings
+bigquery:
+  project_id: electric-cortex 
+  dataset_id: personal_finance
+  transactions_table: f_unified_transactions
+  location: US
+
+# Web scraping settings
+selenium:
+  headless: true
+  download_timeout: 60
+  implicit_wait: 10
+  page_load_timeout: 30
+  chrome_options:
+    - "--no-sandbox"
+    - "--disable-dev-shm-usage"
+    - "--disable-gpu"
+    - "--window-size=1920,1080"
+
+# Path settings
+paths:
+  download_dir: data/raw
+  processed_dir: data/processed
+  log_dir: logs

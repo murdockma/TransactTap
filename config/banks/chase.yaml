@@ -1,0 +1,71 @@
+# Chase Bank configuration
+bank_id: chase
+display_name: Chase Bank
+base_url: https://www.chase.com
+
+username: null
+password: null
+
+# Account types to extract
+accounts:
+  - checking
+  - savings
+  - credit
+
+# Selenium selectors
+selectors:
+  login:
+    username_field: "#userId-input-field"
+    password_field: "#password-input-field"
+    submit_button: "button[type=\"submit\"]"
+    remember_device_checkbox: "#rememberComputer"
+    remember_device_continue: "button[data-testid=\"requestIdentificationCode\"]"
+  
+  mfa:
+    otp_field: "#otpcode_input-input-field"
+    otp_heading: "//h3[contains(text(), \"Enter your code\")]"
+    submit_button: "button[data-testid=\"requestIdentificationCodeSubmit\"]"
+  
+  dashboard:
+    accounts_heading: "//span[contains(text(), \"Accounts\")]"
+    greeting: "//h2[contains(text(), \"Hello\")]"
+    account_tile: ".account-tile"
+  
+  navigation:
+    account_tile_template: "//div[contains(@class, \"account-tile\") and contains(., \"{account_type}\")]"
+    activity_link: "//a[contains(text(), \"See activity\")]"
+    activity_alt_link: "//a[contains(text(), \"Activity & statements\")]"
+    download_link: "//a[contains(text(), \"Download\")]"
+  
+  download:
+    format_select: "#download-type-select"
+    csv_option: "//option[contains(text(), \"CSV\")]"
+    date_range_select: "#date-range-select"
+    custom_date_option: "//option[contains(text(), \"Custom date\")]"
+    start_date: "#start-date-input-field"
+    end_date: "#end-date-input-field"
+    download_button: "button[data-testid=\"download-button\"]"
+
+# Account type mappings
+account_mapping:
+  checking: CHECKING
+  savings: SAVINGS
+  credit: CREDIT_CARD
+
+# Transaction column mappings for account types
+transaction_columns:
+  checking:
+    - transaction_date
+    - post_date
+    - description
+    - amount
+    - transaction_type
+    - balance
+  credit:
+    - transaction_date
+    - post_date
+    - description
+    - category
+    - transaction_type
+    - amount
+    

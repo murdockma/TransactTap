@@ -1,0 +1,118 @@
+{
+  "PAYROLL|SALARY|DIRECT DEP.*SALARY": {
+    "category": "Income",
+    "subcategory": "Salary"
+  },
+  "INTEREST": {
+    "category": "Income",
+    "subcategory": "Interest"
+  },
+  "DIVIDEND": {
+    "category": "Income",
+    "subcategory": "Dividends"
+  },
+  "UBER|LYFT|TAXI|CAB": {
+    "category": "Transportation",
+    "subcategory": "Rideshare"
+  },
+  "NETFLIX|HULU|DISNEY\\+|HBO|PRIME VIDEO|PARAMOUNT\\+|PEACOCK": {
+    "category": "Entertainment",
+    "subcategory": "Streaming"
+  },
+  "SPOTIFY|APPLE MUSIC|TIDAL|PANDORA|YOUTUBE MUSIC": {
+    "category": "Entertainment",
+    "subcategory": "Music"
+  },
+  "AMAZON|AMZN|AMAZON PRIME": {
+    "category": "Shopping",
+    "subcategory": "Online"
+  },
+  "WALMART|TARGET|COSTCO|KROGER|SAFEWAY|ALBERTSONS|PUBLIX": {
+    "category": "Groceries",
+    "subcategory": "Supermarket"
+  },
+  "MCDONALD|BURGER KING|WENDY|TACO BELL|KFC|CHICK|SUBWAY|DOMINO|PIZZA": {
+    "category": "Food",
+    "subcategory": "Fast Food"
+  },
+  "GRUBHUB|DOORDASH|UBEREATS|POSTMATES|SEAMLESS": {
+    "category": "Food",
+    "subcategory": "Delivery"
+  },
+  "RESTAURANT|CAFE|DINER|BISTRO|BAR|GRILL": {
+    "category": "Food",
+    "subcategory": "Dining Out"
+  },
+  "STARBUCKS|DUNKIN|COFFEE": {
+    "category": "Food",
+    "subcategory": "Coffee"
+  },
+  "SHELL|EXXON|MOBIL|CHEVRON|BP|VALERO|GAS ": {
+    "category": "Transportation",
+    "subcategory": "Gas"
+  },
+  "PARKING|METER|GARAGE": {
+    "category": "Transportation",
+    "subcategory": "Parking"
+  },
+  "DOCTOR|DENTAL|MEDICAL|HOSPITAL|CLINIC|PHARMACY|CVS|WALGREENS": {
+    "category": "Healthcare",
+    "subcategory": "Medical"
+  },
+  "RENT|LEASE|MORTGAGE|HOA|LANDLORD": {
+    "category": "Housing",
+    "subcategory": "Rent/Mortgage"
+  },
+  "WATER|ELECTRIC|GAS|UTILITY|POWER|ENERGY|PG&E|EDISON|HEAT": {
+    "category": "Housing",
+    "subcategory": "Utilities"
+  },
+  "INSURANCE|GEICO|STATE FARM|ALLSTATE|PROGRESSIVE|LIBERTY MUTUAL": {
+    "category": "Insurance",
+    "subcategory": "Auto"
+  },
+  "HEALTH INSURANCE|MEDICAL INSURANCE|DENTAL INSURANCE": {
+    "category": "Insurance",
+    "subcategory": "Health"
+  },
+  "AT&T|VERIZON|T-MOBILE|SPRINT|COMCAST|XFINITY|SPECTRUM|COX|INTERNET|WIRELESS|CELL|PHONE": {
+    "category": "Utilities",
+    "subcategory": "Internet/Phone"
+  },
+  "NETFLIX|HULU|SPOTIFY|DISNEY\\+|HBO|APPLE|ICLOUD|GOOGLE|YOUTUBE|AMAZON PRIME": {
+    "category": "Subscriptions",
+    "subcategory": "Digital"
+  },
+  "GYM|FITNESS|PELOTON|EQUINOX|PLANET FITNESS|LA FITNESS": {
+    "category": "Health & Fitness",
+    "subcategory": "Gym"
+  },
+  "AIRLINE|FLIGHT|DELTA|UNITED|AMERICAN|SOUTHWEST|JETBLUE|SPIRIT|FRONTIER": {
+    "category": "Travel",
+    "subcategory": "Flights"
+  },
+  "HOTEL|AIRBNB|VRBO|MARRIOTT|HILTON|HYATT": {
+    "category": "Travel",
+    "subcategory": "Lodging"
+  },
+  "TRANSFER|ZELLE|VENMO|PAYPAL|CASH APP|SQUARE CASH": {
+    "category": "Transfers",
+    "subcategory": "Person to Person"
+  },
+  "ATM|WITHDRAWAL|DEPOSIT": {
+    "category": "Transfers",
+    "subcategory": "Cash"
+  },
+  "INVESTMENT|VANGUARD|FIDELITY|SCHWAB|ETRADE|ROBINHOOD|401K|IRA|ROTH": {
+    "category": "Investments",
+    "subcategory": "Brokerage"
+  },
+  "STUDENT LOAN|SALLIE MAE|NAVIENT|GREAT LAKES|NELNET": {
+    "category": "Debt",
+    "subcategory": "Student Loans"
+  },
+  "CREDIT CARD PAYMENT|PAYMENT THANK YOU": {
+    "category": "Transfers",
+    "subcategory": "Credit Card Payment"
+  }
+}
