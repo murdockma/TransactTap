@@ -4,7 +4,6 @@ display_name: Wells Fargo
 base_url: https://wellsfargo.com
 
 # Credentials should be set via env vars
-# WELLS_FARGO_USERNAME and WELLS_FARGO_PASSWORD
 username: null
 password: null
 
